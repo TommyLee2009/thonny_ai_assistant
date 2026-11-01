@@ -1,0 +1,2 @@
+[thonny.plugins]
+thonny-ai-assistant = thonnycontrib.thonny_ai_assistant

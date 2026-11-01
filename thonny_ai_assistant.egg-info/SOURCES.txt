@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_generation_settings.py
+tests/test_i18n.py
+thonny_ai_assistant.egg-info/PKG-INFO
+thonny_ai_assistant.egg-info/SOURCES.txt
+thonny_ai_assistant.egg-info/dependency_links.txt
+thonny_ai_assistant.egg-info/entry_points.txt
+thonny_ai_assistant.egg-info/requires.txt
+thonny_ai_assistant.egg-info/top_level.txt
+thonnycontrib/thonny_ai_assistant/__init__.py
+thonnycontrib/thonny_ai_assistant/i18n.py
+thonnycontrib/thonny_ai_assistant/thonny_ai_assistant_tool.py
