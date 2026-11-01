@@ -19,8 +19,8 @@ Official references:
 | GitHub repository | `thonny_ai_assistant` |
 | Workflow file | `publish.yml` |
 | GitHub environment | `pypi` |
-| Package version | `0.6.2` |
-| Release tag | `0.6.2` |
+| Package version | `0.6.3` |
+| Release tag | `0.6.3` |
 
 As of 2026-11-01, `thonny-ai-assistant` did not exist on PyPI. A pending
 Trusted Publisher does **not** reserve the project name until the first
@@ -79,13 +79,12 @@ history before publishing.
 The package version and release tag must match exactly. This project uses the
 tag name without a leading `v`.
 
-1. Confirm both `setup.py` and `pyproject.toml` contain version `0.6.2`.
+1. Confirm both `setup.py` and `pyproject.toml` contain version `0.6.3`.
 2. Push the publishing workflow and cleanup commit to `main`.
-3. Make sure tag `0.6.2` points to the source that should be published.
-4. Because release `0.6.2` already exists from before the workflow was added,
-   open **Actions > Publish to PyPI > Run workflow** and enter tag `0.6.2`.
-   For later versions, publishing a GitHub Release triggers the workflow
-   automatically.
+3. Create and push tag `0.6.3` pointing to the source that should be published.
+4. Draft a GitHub Release for tag `0.6.3` and publish it. This triggers the
+   workflow automatically. If necessary, it can also be started manually with
+   tag `0.6.3` from the Actions page.
 5. The `Publish to PyPI` workflow will:
    - verify the tag and package versions match;
    - build a wheel and source distribution;
@@ -103,8 +102,8 @@ tag name without a leading `v`.
 4. Create an annotated tag with the same version:
 
    ```powershell
-   git tag -a 0.6.3 -m "Release 0.6.3"
-   git push origin 0.6.3
+   git tag -a 0.6.4 -m "Release 0.6.4"
+   git push origin 0.6.4
    ```
 
 5. Publish a GitHub Release for that tag.

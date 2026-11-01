@@ -1,10 +1,12 @@
 # Changelog
 
-## Unreleased
+## 0.6.3 - 2026-11-01
 
 - Added a PyPI Trusted Publishing workflow using GitHub Actions OIDC.
 - Documented pending-publisher fields, environment setup, release checks, and
   repository cleanup.
+- Updated installation instructions for Thonny's plugin manager, online PyPI
+  installation, offline wheel installation, and the Thonny 5.0.0 requirement.
 
 ## 0.6.2 - 2026-11-01
 

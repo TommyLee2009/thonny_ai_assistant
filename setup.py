@@ -7,7 +7,7 @@ README_PATH = Path(__file__).with_name("README.md")
 
 setup(
     name="thonny-ai-assistant",
-    version="0.6.2",
+    version="0.6.3",
     description="Bilingual AI assistant plugin for Thonny",
     long_description=README_PATH.read_text(encoding="utf-8"),
     long_description_content_type="text/markdown",
