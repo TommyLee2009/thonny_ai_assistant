@@ -64,6 +64,9 @@ Thonny 修改界面语言后需要重启。重启 Thonny 后，插件工具栏�
 
 安装包入口为 `thonny-ai-assistant`，内部视图 ID 保持为 `AIChatView`。
 
+PyPI 发布使用 GitHub Actions OIDC，配置和发布步骤见
+[PUBLISHING.md](PUBLISHING.md)。
+
 ## 配置供应商
 
 1. 打开 Thonny 的“视图 > AI助手”。
@@ -193,6 +196,10 @@ Thonny `python.exe`. Restart Thonny after installation.
 
 The package entry point is `thonny-ai-assistant`. The internal Thonny view
 identifier remains `AIChatView`.
+
+PyPI publication uses GitHub Actions OIDC. See
+[PUBLISHING.md](PUBLISHING.md) for trusted-publisher settings and the release
+procedure.
 
 ## Configuration
 

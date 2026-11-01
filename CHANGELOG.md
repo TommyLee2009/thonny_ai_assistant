@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Added a PyPI Trusted Publishing workflow using GitHub Actions OIDC.
+- Documented pending-publisher fields, environment setup, release checks, and
+  repository cleanup.
+
 ## 0.6.2 - 2026-11-01
 
 - Updated the current software author and maintainer to TommyLee2009.
