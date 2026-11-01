@@ -2,6 +2,7 @@
 
 [简体中文](#简体中文) |  [English](#English) 
 
+![AI Assistant in Thonny](demo.png)
 
 # 简体中文
 
@@ -54,13 +55,17 @@ Thonny 修改界面语言后需要重启。重启 Thonny 后，插件工具栏�
 
 ## 安装
 
-在项目根目录使用 Thonny 自带的 Python 安装：
+1. 确认 **Thonny 版本为 5.0.0 或更高版本**。低于 5.0.0 时，插件安装的用户
+   目录可能与 Thonny 实际加载目录不一致，导致插件无法正常加载或运行。
+2. 打开 Thonny 的“工具 > 管理插件”。
+3. 切换到“从PyPI安装”，搜索并安装 `thonny-ai-assistant`。
+4. 离线安装时，先下载对应的 `.whl` 文件，再在“管理插件”中选择从本地安装
+   该 wheel 文件。
+5. 安装完成后重启 Thonny。
 
-```powershell
-& "C:\Program Files\Thonny\python.exe" -m pip install .
-```
-
-便携版请替换为便携版目录中的 `python.exe`。安装后重启 Thonny。
+如果插件刚完成首次 PyPI 发布但尚未出现在搜索结果中，请使用离线 wheel
+安装方式。不要只把 wheel 放到 Thonny 目录中，必须通过“管理插件”安装，
+以正确注册 Python 包和 Thonny 插件入口。
 
 安装包入口为 `thonny-ai-assistant`，内部视图 ID 保持为 `AIChatView`。
 
@@ -125,8 +130,6 @@ side-panel chat, code analysis, streaming responses, multiple
 OpenAI-compatible providers, configurable generation parameters, and a global
 system prompt.
 
-![AI Assistant in Thonny](demo.png)
-
 ## Attribution
 
 This project is based on and substantially modified from
@@ -177,22 +180,27 @@ Thonny for the plugin labels and dialogs to switch languages too.
 
 ## Requirements
 
-- Thonny with Python 3.8 or newer. Thonny 5.0 on Python 3.14 has been tested.
+- Thonny 5.0.0 or newer. Older versions may use a different user plugin
+  directory from the one Thonny actually loads, causing the plugin to
+  malfunction.
 - `openai>=1.75.0`.
 - Network access to the configured model provider.
 - A valid API key for that provider.
 
 ## Installation
 
-Install from the repository root using the Python interpreter bundled with
-Thonny:
+1. Confirm that **Thonny 5.0.0 or newer** is installed. Older versions may use
+   a different user plugin directory from the one Thonny actually loads.
+2. Open **Tools > Manage plugins** in Thonny.
+3. Open **Install from PyPI** and search for `thonny-ai-assistant`.
+4. For offline installation, download the required `.whl` file and install it
+   from the local-file option in **Manage plugins**.
+5. Restart Thonny after installation.
 
-```powershell
-& "C:\Program Files\Thonny\python.exe" -m pip install .
-```
-
-For a portable installation, replace the executable path with the portable
-Thonny `python.exe`. Restart Thonny after installation.
+If the package has just been published to PyPI and does not appear in search
+results yet, use the offline wheel option. Copying a wheel into the Thonny
+directory is not sufficient; install it through **Manage plugins** so the
+Python package and Thonny entry point are registered correctly.
 
 The package entry point is `thonny-ai-assistant`. The internal Thonny view
 identifier remains `AIChatView`.
