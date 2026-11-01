@@ -1,0 +1,59 @@
+# Local credentials and user data
+.env
+.env.*
+*.key
+*.pem
+config.json
+
+# Python test and build caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+dist/
+release-dist/
+build/
+*.whl
+*.tar.gz
+.env
+.venv
+Pipfile.lock
+poetry.lock
+
+# C/C++ 編譯產物
+*.o
+*.obj
+*.elf
+*.a
+*.so
+*.out
+*.exe
+
+# log 檔案
+*.log
+*.log.*
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# editor
+*.swp
+*~
+.vscode/
+.idea/

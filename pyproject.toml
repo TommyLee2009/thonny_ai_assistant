@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "thonny-ai-assistant"
-version = "0.6.3"
+version = "0.6.4"
 description = "Bilingual AI assistant plugin for Thonny"
 readme = "README.md"
 authors = [
@@ -26,7 +26,10 @@ dependencies = ["openai>=1.75.0"]
 requires-python = ">=3.8"
 
 [project.urls]
-Upstream = "https://github.com/Oliver0804/thonny_openai_gpt"
+Homepage = "https://github.com/TommyLee2009/thonny_ai_assistant"
+Repository = "https://github.com/TommyLee2009/thonny_ai_assistant"
+Issues = "https://github.com/TommyLee2009/thonny_ai_assistant/issues"
+Changelog = "https://github.com/TommyLee2009/thonny_ai_assistant/blob/main/CHANGELOG.md"
 
 [project.entry-points."thonny.plugins"]
 thonny-ai-assistant = "thonnycontrib.thonny_ai_assistant"
